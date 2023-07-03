@@ -1,5 +1,6 @@
 import React, { memo, useEffect, useState } from "react";
 import styles from './styles.module.css'
+import Link from "next/link";
 
 const Navigation: React.FC = () => {
 
@@ -32,15 +33,15 @@ const Navigation: React.FC = () => {
       <header className={`${styles.navigation} ${isHidden ? styles.hidden : ''} ${scrolled ? styles.active : ''} relative justify-between flex z-9`}>
         <ul className="flex items-center gap-20">
           <li className={styles.itemMenu}>
-            <a className="text-white font-bold text-base" href="/">Trang chu</a>
+            <Link className="text-white font-bold text-base" href="/">Trang chu</Link>
           </li>
           <li className={styles.itemMenu}>
-            <a className="text-white font-bold text-base" href="/">Tu van & Thiet ke</a>
+            <Link className="text-white font-bold text-base" href="/">Tu van & Thiet ke</Link>
           </li>
         </ul>
         <ul className="flex items-center gap-20">
           <li className={styles.itemMenu}>
-            <a className="text-white font-bold text-base" href="/">San pham</a>
+            <Link className="text-white font-bold text-base" href="/">San pham</Link>
           </li>
           <li className={styles.itemMenu}>
             <a className="text-white font-bold text-base" href="/" target="_blank">Lien he</a>
