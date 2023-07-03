@@ -8,9 +8,10 @@ body {
 }
 
 * {
-  font-family: 'Agrandir';
+  font-family: Poppins;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 16px;
-  line-height: 16px;
+  transition: all .3s linear;
+  cursor: pointer;
 }

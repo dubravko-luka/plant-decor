@@ -1,0 +1,34 @@
+.mainText {
+  font-family: BacasimeAntique;
+  font-size: 126px;
+  font-weight: 200;
+  line-height: .7;
+  letter-spacing: 10px;
+}
+
+.viewDatePerson {
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+}
+
+.iconDatePerson * {
+  width: 50px;
+  height: 50px;
+}
+
+.textDatePerson {
+  transform: translateY(2px);
+}
+
+.lineName {
+  height: 2px;
+  width: 100%;
+  background: #fff;
+  margin: 5px 0px 10px;
+}

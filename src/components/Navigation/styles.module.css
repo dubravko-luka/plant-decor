@@ -1,0 +1,52 @@
+.navigation {
+  height: 114px;
+  padding: 50px 62px;
+  box-sizing: border-box;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 200ms linear;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: transparent;
+}
+
+.navigation.hidden {
+  top: -114px;
+}
+
+.navigation.active {
+  background: rgba(128, 128, 128, 0.5);
+  backdrop-filter: blur(9.5px);
+}
+
+/* LOGO */
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.itemMenu {
+  position: relative;
+}
+
+.itemMenu:before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width .3s linear;
+}
+
+.itemMenu:hover:before {
+  width: 90%;
+}

@@ -1,25 +1,15 @@
 import React, { memo } from "react";
-import styled from "styled-components";
+import HomeContainer from "@/modules/home";
+import Title from "@/components/Head/title";
 
-const Wrapper = styled.div<{ sm?: string, any?: string }>`
-  transform: translateY(${({ sm }) => sm});
-  transition: all .3s linear;
-
-  @media (max-width: 639px) {
-    transform: translateY(${({ any }) => any});
-  }
-`;
-
-const Home: React.FC = () => {
+const HomePage: React.FC = () => {
 
   return (
     <>
-
-      <Wrapper>
-        {/*  */}
-      </Wrapper >
+      <Title title="LongTran | Trang Chủ" />
+      <HomeContainer />
     </>
   )
 }
 
-export default memo(Home)
+export default memo(HomePage)

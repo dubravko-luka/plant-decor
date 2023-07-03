@@ -1,59 +1,169 @@
-/* AGRANDIR */
+/* POPPINS 100 */
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins/Poppins-Thin.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+}
 
 @font-face {
-  font-family: 'Agrandir';
-  src: url('./fonts/agrandir/Agrandir-Regular.ttf') format('truetype');
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins/Poppins-ThinItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+}
+
+/* POPPINS 200 */
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins/Poppins-ExtraLight.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins/Poppins-ExtraLightItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+}
+
+/* POPPINS 300 */
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins/Poppins-Light.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins/Poppins-LightItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+}
+
+/* POPPINS 400 */
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins/Poppins-Regular.ttf') format('truetype');
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Agrandir';
-  src: url('./fonts/agrandir/Agrandir-TextBold.ttf') format('truetype');
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins/Poppins-Italic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+/* POPPINS 500 */
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins/Poppins-Medium.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins/Poppins-MediumItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+/* POPPINS 600 */
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins/Poppins-SemiBold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins/Poppins-SemiBoldItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+}
+
+/* POPPINS 700 */
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins/Poppins-Bold.ttf') format('truetype');
   font-style: normal;
   font-weight: 700;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Agrandir';
-  src: url('./fonts/agrandir/Agrandir-ThinItalic.ttf') format('truetype');
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins/Poppins-BoldItalic.ttf') format('truetype');
   font-style: italic;
-  font-weight: 400;
+  font-weight: 700;
   font-display: swap;
 }
 
-/* THUNDER */
-
+/* POPPINS 800 */
 @font-face {
-  font-family: 'Thunder';
-  src: url('./fonts/thunder/Thunder-SemiBoldLC.ttf') format('truetype');
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins/Poppins-ExtraBold.ttf') format('truetype');
   font-style: normal;
-  font-weight: 600;
+  font-weight: 800;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Thunder';
-  src: url('./fonts/thunder/Thunder-SemiBoldLCItalic.ttf') format('truetype');
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins/Poppins-ExtraBoldItalic.ttf') format('truetype');
   font-style: italic;
-  font-weight: 600;
+  font-weight: 800;
+  font-display: swap;
+}
+
+/* POPPINS 900 */
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins/Poppins-Black.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 900;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Thunder';
-  src: url('./fonts/thunder/Thunder-ThinLC.ttf') format('truetype');
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins/Poppins-BlackItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+}
+
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+/* --------------------------- BacasimeAntique ------------------------ */
+
+/* BacasimeAntique 400 */
+@font-face {
+  font-family: 'BacasimeAntique';
+  src: url('./fonts/Bacasime_Antique/BacasimeAntique-Regular.ttf') format('truetype');
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
 
-@font-face {
-  font-family: 'Thunder';
-  src: url('./fonts/thunder/Thunder-ThinLCItalic.ttf') format('truetype');
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-}
+/* ------------------------- END BacasimeAntique ---------------------- */
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
