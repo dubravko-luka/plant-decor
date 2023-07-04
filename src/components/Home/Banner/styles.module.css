@@ -1,3 +1,7 @@
+.logo {
+  filter: drop-shadow(rgba(0, 0, 0, .6) -1px 0px 1px) drop-shadow(rgba(0, 0, 0, .6) -1px 1px 1px) drop-shadow(rgba(0, 0, 0, .6) 1px 1px 1px) drop-shadow(rgba(0, 0, 0, .6) 1px -1px 1px);
+}
+
 .mainText {
   font-family: BacasimeAntique;
   font-size: 126px;
@@ -14,12 +18,15 @@
   bottom: 50px;
   left: 50%;
   transform: translateX(-50%);
-  background: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(9.5px);
 }
 
 .iconDatePerson * {
-  width: 50px;
-  height: 50px;
+  min-width: 50px;
+  max-width: 50px;
+  min-height: 50px;
+  max-height: 50px;
 }
 
 .textDatePerson {
@@ -31,4 +38,26 @@
   width: 100%;
   background: #fff;
   margin: 5px 0px 10px;
+}
+
+@media (max-width: 639px) {
+  .viewDatePerson {
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(9.5px);
+  }
+
+  .iconDatePerson {
+    display: none;
+  }
+}
+
+@media (max-width: 639px) {
+  .viewDatePerson {
+    display: grid;
+    gap: 10px;
+    width: 90%;
+  }
 }
