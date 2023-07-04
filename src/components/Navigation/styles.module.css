@@ -98,6 +98,7 @@
     height: 100vh;
     left: -105vw;
     top: 0;
+    padding: 50px 30px;
   }
 
   .menu.active {
