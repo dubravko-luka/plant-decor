@@ -9,18 +9,18 @@ const Banner: React.FC = () => {
   return (
     <>
       <div className="h-screen w-screen relative">
-        <img className="relative w-full h-full object-cover brightness-50" src="/images/page-home/png/banner.png" alt="" />
+        <img className="relative w-full h-full object-cover brightness-90" src="/images/page-home/jpg/banner.jpg" alt="" />
         <div className="content absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
-          <img className={`w-80 ${styles.logo}`} src="/images/page-home/png/logo.png" alt="" />
+          <img className={`w-52 ${styles.logo}`} src="/images/page-home/png/logo.png" alt="" />
         </div>
         <div className={`${styles.viewDatePerson} flex items-center gap-5`}>
           <Link className={styles.itemDatePerson} href={'tel:0904407775'}>
             <div className="date flex items-center gap-5 px-5">
               <Svg name="phone" path="icons" />
-              <p className={`${styles.textDatePerson} text-[#AE935F] font-bold text-base whitespace-nowrap`}>09 04 407 775</p>
+              <p className={`${styles.textDatePerson} text-[#AE935F] font-bold text-base whitespace-nowrap`}>092 966 4272</p>
             </div>
           </Link>
-          <Link className={styles.itemDatePerson} href={'/'}>
+          <Link className={styles.itemDatePerson} target="_blank" href={'https://zalo.me/0929664272'}>
             <div className="person flex items-center gap-5 px-5">
               <Svg name="person" path="icons" />
               <p className={`${styles.textDatePerson} text-[#AE935F] font-bold text-base whitespace-nowrap`}>TRAN LONG (ZALO)</p>

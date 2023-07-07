@@ -1,5 +1,5 @@
 .logo {
-  filter: drop-shadow(rgba(0, 0, 0, .6) -1px 0px 1px) drop-shadow(rgba(0, 0, 0, .6) -1px 1px 1px) drop-shadow(rgba(0, 0, 0, .6) 1px 1px 1px) drop-shadow(rgba(0, 0, 0, .6) 1px -1px 1px);
+  filter: drop-shadow(rgba(255, 255, 255, .6) -3px 0px 3px) drop-shadow(rgba(255, 255, 255, .6) -3px 3px 3px) drop-shadow(rgba(255, 255, 255, .6) 3px 3px 3px) drop-shadow(rgba(255, 255, 255, .6) 3px -3px 3px);
 }
 
 .mainText {

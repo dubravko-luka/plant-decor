@@ -1,0 +1,29 @@
+.wrapper {
+  background: rgb(65, 64, 66);
+}
+
+.itemProject {
+  min-height: 250px;
+  background: #fff;
+}
+
+.imgProject {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 991px) {
+  .wrapImgProject {
+    height: 250px;
+  }
+}
+
+@media (max-width: 767px) {
+  .wrapImgProject {
+    min-height: 250px;
+    height: 100%;
+  }
+}
