@@ -1,5 +1,5 @@
 .navigation {
-  height: 114px;
+  height: 100px;
   box-sizing: border-box;
   position: fixed;
   top: 0;
@@ -16,12 +16,14 @@
   width: 100%;
   padding: 50px 62px;
   z-index: 9;
-  height: 114px;
+  height: 100px;
   position: fixed;
   top: 0;
   left: 0;
   transition: all .3s linear;
   position: fixed;
+  background: rgb(0, 100, 0, .5);
+  backdrop-filter: blur(9.5px);
 }
 
 .menu.hidden {
@@ -29,7 +31,7 @@
 }
 
 .menu.scrolled {
-  background: rgba(128, 128, 128, 0.5);
+  background: rgb(0, 100, 0, .5);
   backdrop-filter: blur(9.5px);
 }
 
@@ -53,10 +55,11 @@
 
 .logo {
   position: fixed;
-  top: 25px;
+  top: 17px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
+  transition: all .3s linear;
 }
 
 .itemMenu {
@@ -92,17 +95,20 @@
 
   .menu {
     display: block;
-    position: absolute;
+    position: fixed;
     overflow: hidden;
     width: 100vw;
-    height: 100vh;
-    left: -105vw;
+    height: 100px;
+    left: 0vw;
     top: 0;
-    padding: 50px 30px;
+    padding: 10px 30px;
+    transition: all .3s linear;
   }
 
   .menu.active {
-    left: 0px;
+    height: 100vh;
+    background: rgb(0, 100, 0, .5);
+    backdrop-filter: blur(9.5px);
   }
 
   .navigation {
@@ -128,8 +134,8 @@
 
   .closeMenu {
     position: absolute;
-    top: 20px;
-    right: 10px;
+    top: 25px;
+    left: 10px;
     z-index: 99;
   }
 
@@ -148,12 +154,17 @@
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 639px) {
   .openMenu {
     left: 10px;
   }
 
   .logo {
-    transform: translateX(-50%) scale(.7);
+    top: 17px;
+    right: -10px;
+    left: unset;
+    transform: scale(.7);
+    padding-left: 0px;
+    margin-left: 0px;
   }
 }

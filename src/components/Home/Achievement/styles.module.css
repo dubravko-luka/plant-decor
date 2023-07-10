@@ -1,5 +1,10 @@
 .wrapper {
-  background: rgb(65, 64, 66);
+  background: url('/images/page-home/webp/background.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-color: honeydew;
 }
 
 .itemProject {

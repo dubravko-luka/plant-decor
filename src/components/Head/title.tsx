@@ -9,7 +9,7 @@ const Title: React.FC<Props> = ({ title = 'LongTran' }) => {
   return (
     <>
       <Head>
-        <title>{title ? title.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase()) : 'LongTran'}</title>
+        <title>{title ? title : 'LongTran'}</title>
       </Head>
     </>
   )

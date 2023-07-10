@@ -6,6 +6,7 @@ import { AppContextProvider } from '@/contexts'
 import WindowResizeHandler from '@/handlers/WindowResizeHandler'
 import Head from '@/components/Head'
 import Navigation from '@/components/Navigation'
+import Footer from '@/components/Footer'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -14,6 +15,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Head />
       <Navigation />
       <Component {...pageProps} />
+      <Footer />
     </AppContextProvider>
   )
 }

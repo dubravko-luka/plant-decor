@@ -65,18 +65,18 @@ const Navigation: React.FC = () => {
         }
         <ul className={`${styles.itemWrapMenu} ${styles.itemWrapMenuTop} flex items-center lg:gap-20 gap-10`}>
           <li className={styles.itemMenu}>
-            <Link onClick={() => setShowMenu(false)} className="text-white font-bold text-base" href="/">Trang chu</Link>
+            <Link onClick={() => setShowMenu(false)} className="text-white font-bold text-base" href="/">Trang chủ</Link>
           </li>
           <li className={styles.itemMenu}>
-            <Link onClick={() => setShowMenu(false)} className="text-white font-bold text-base" href="/">San pham</Link>
+            <Link onClick={() => setShowMenu(false)} className="text-white font-bold text-base" href="/">Sản phầm</Link>
           </li>
         </ul>
         <ul className={`${styles.itemWrapMenu} flex items-center lg:gap-20 gap-10`}>
           <li className={styles.itemMenu}>
-            <Link onClick={() => setShowMenu(false)} className="text-white font-bold text-base" href="/">Tu van & Thiet ke</Link>
+            <Link onClick={() => setShowMenu(false)} className="text-white font-bold text-base" href="/">Tư vấn & Thiết kế</Link>
           </li>
           <li className={styles.itemMenu}>
-            <Link onClick={() => setShowMenu(false)} className="text-white font-bold text-base" href="/" target="_blank">Lien he</Link>
+            <Link onClick={() => setShowMenu(false)} className="text-white font-bold text-base" href="/lien-he">Liên hệ</Link>
           </li>
         </ul>
         <div className={`${styles.logo} text-center`}>
@@ -84,7 +84,7 @@ const Navigation: React.FC = () => {
           <p className="description ssm:text-base text-xs text-white font-medium uppercase tracking-wider">Architecture & Interior Design</p>
         </div>
         {
-          Number(appState?.widthClient) <= 991
+          Number(appState?.widthClient) <= 991 && !showMenu
             ? (
               <>
                 <div className={styles.openMenu} onClick={() => setShowMenu(true)}>
