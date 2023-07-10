@@ -1,11 +1,12 @@
 import Svg from "@/components/Svg";
 import Link from "next/link";
 import React, { memo } from "react";
+import styles from './styles.module.css'
 
 const ContactContainer: React.FC = () => {
   return (
     <>
-      <div className="pt-[100px]">
+      <div className={`${styles.wrapper} pt-[100px] min-h-screen flex items-center justify-center`}>
         <div className="py-10 container">
           <div className="bg-green-113 grid grid-cols-12 gap-0">
             <div className="llg:col-span-6 col-span-12 text-white p-5 flex items-center justify-center min-h-[400px]">
