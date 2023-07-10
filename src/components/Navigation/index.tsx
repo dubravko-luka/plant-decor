@@ -68,7 +68,7 @@ const Navigation: React.FC = () => {
             <Link onClick={() => setShowMenu(false)} className="text-white font-bold text-base" href="/">Trang chủ</Link>
           </li>
           <li className={styles.itemMenu}>
-            <Link onClick={() => setShowMenu(false)} className="text-white font-bold text-base" href="/">Sản phầm</Link>
+            <Link onClick={() => setShowMenu(false)} className="text-white font-bold text-base" href="/">Sản phẩm</Link>
           </li>
         </ul>
         <ul className={`${styles.itemWrapMenu} flex items-center lg:gap-20 gap-10`}>
