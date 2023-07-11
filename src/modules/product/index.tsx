@@ -1,13 +1,13 @@
 import React, { memo } from "react";
 import styles from './styles.module.css'
 
-const Achievement: React.FC = () => {
+const ProductContainer: React.FC = () => {
   return (
     <>
-      <div className={styles.wrapper}>
+      <div className={`pt-[100px] min-h-screen flex items-center justify-center`}>
         <div className="container py-12 grid grid-cols-12 gap-5">
           <div className="col-span-12 mb-4">
-            <p className="text-white font-bold text-2xl uppercase text-center">Thành tựu của chúng tôi</p>
+            <p className="text-green-main font-bold text-2xl uppercase text-center">Thành tựu của chúng tôi</p>
           </div>
           <div className="list col-span-12">
             <div className="grid grid-cols-12 ssm:gap-5 gap-2">
@@ -39,4 +39,4 @@ const Achievement: React.FC = () => {
   )
 }
 
-export default memo(Achievement)
+export default memo(ProductContainer)

@@ -1,0 +1,28 @@
+.itemProject {
+  min-height: 250px;
+  background: #fff;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, .2);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.imgProject {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 991px) {
+  .wrapImgProject {
+    height: 250px;
+  }
+}
+
+@media (max-width: 767px) {
+  .wrapImgProject {
+    min-height: 250px;
+    height: 100%;
+  }
+}
