@@ -1,38 +1,65 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Vườn Trong Nhà - Next.js Project
+
+Welcome to the **Vườn Trong Nhà** project! This is a Next.js application built using Node.js 16 and Next.js 13.
 
 ## Getting Started
 
-First, run the development server:
+To get started with the project, follow these steps:
 
+1. **Clone the Repository:** Start by cloning the repository to your local machine:
+```bash
+git clone https://github.com/dubravko-luka/plant-decor.git
+```
+
+2. **Navigate to Project Directory:** Change into the project directory:
+```bash
+cd plant-decor
+```
+
+3. **Install Dependencies:** Install the project dependencies using npm or yarn:
+```bash
+npm install
+# or
+yarn install
+```
+
+4. **Start Development Server:** Run the development server to see the project in action:
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. **Open in Browser:** Once the development server is up and running, open your web browser and navigate to `http://localhost:3000` to see the project.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+The project has the following directory structure:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- `pages/`: This directory contains the pages of your application. Each `.ts` or `.tsx` file inside this directory represents a page.
+- `public/`: This directory is used to serve static assets like images, fonts, and other files that don't need processing.
+- `styles/`: Contains stylesheets for your application.
+- `components/`: This directory contains reusable React components used across different pages.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Building for Production
 
-## Learn More
+To build the project for production, use the following command:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+# or
+yarn build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The optimized and minified files will be placed in the `.next/` directory.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Deployment
 
-## Deploy on Vercel
+You can deploy your Next.js application using platforms like Vercel, Netlify, or your own hosting solution. Follow their documentation for deployment instructions.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Additional Resources
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Next.js Documentation](https://nextjs.org/docs/getting-started)
+- [Node.js Documentation](https://nodejs.org/en/docs/)
+
+Feel free to explore, modify, and expand upon the **Vườn Trong Nhà** project. Happy coding!
