@@ -1,0 +1,24 @@
+.wrapper {
+  border: 1px solid #000;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.head {
+  padding: 5px 10px;
+  box-sizing: border-box;
+  background: var(--color-main);
+}
+
+.body {
+  padding: 5px 10px 10px;
+  box-sizing: border-box;
+}
+
+.icon svg {
+  height: 10px;
+}
+
+.icon svg * {
+  fill: #000;
+}

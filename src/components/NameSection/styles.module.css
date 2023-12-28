@@ -1,0 +1,27 @@
+.text {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+._text {
+  background: #0d543a;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.icon svg {
+  width: 30px;
+  height: 27px;
+}
+
+@media (max-width: 640px) {
+
+  .text,
+  ._text {
+    font-size: 24px;
+  }
+}

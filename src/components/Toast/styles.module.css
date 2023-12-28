@@ -1,0 +1,27 @@
+/* PENDDING */
+
+@keyframes p_rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.p_wrapLoading {
+  padding: 11.5px;
+  box-sizing: border-box;
+  width: 59px;
+  height: 59px;
+}
+
+.p_loading {
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid transparent;
+  border-radius: 50%;
+  animation: p_rotate 2s linear infinite;
+}
+
+/* END PENDDING */
