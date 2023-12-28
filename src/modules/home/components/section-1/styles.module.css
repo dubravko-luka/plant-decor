@@ -1,0 +1,162 @@
+.wrapper {
+  padding: 75px 20px;
+  box-sizing: border-box;
+  background: #f7f7f5;
+  gap: 24px;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 1.2;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.shortTitle {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 150%;
+  color: #191919;
+  margin-bottom: 16px;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #191919;
+  margin-bottom: 30px;
+}
+
+.listFeature {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.itemFeature {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 14px;
+}
+
+.btnRegisterAdvise {
+  border: 1px solid #058557;
+  border-radius: 40px;
+  padding: 13px 20px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: #058557;
+  text-decoration: none;
+  transition: 0.5s all ease;
+  position: relative;
+  display: inline-block;
+}
+
+.btnRegisterAdvise:hover {
+  background-color: #058557;
+  color: #fff;
+}
+
+.wrapProduct {
+  height: 410px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.wrapProduct:nth-child(odd) {
+  transform: translateY(20px);
+}
+
+.wrapProduct:nth-child(even) {
+  transform: translateY(-20px);
+}
+
+.imgProduct {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product {
+  gap: 24px;
+}
+
+.wrapProduct:before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  background: linear-gradient(0deg, rgba(5, 133, 87, 0.6), rgba(5, 133, 87, 0.6));
+  transition: .2s all ease;
+  border-radius: 20px;
+}
+
+.wrapProduct:hover:before {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.wrapProduct:after {
+  content: "Chi tiết";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5px 20px;
+  box-sizing: border-box;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  font-size: 12px;
+  white-space: nowrap;
+  z-index: 2;
+  opacity: 0;
+  transition: .2s all ease;
+}
+
+.wrapProduct:hover:after {
+  opacity: 1;
+  top: 50%;
+}
+
+@media (max-width: 991px) {
+
+  .product {
+    gap: 16px;
+  }
+
+  .wrapProduct {
+    height: 275px;
+  }
+}
+
+@media (max-width: 639px) {
+  .title {
+    font-size: 36px;
+  }
+
+  .shortTitle {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 410px) {
+
+  .wrapper {
+    column-gap: 10px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+}

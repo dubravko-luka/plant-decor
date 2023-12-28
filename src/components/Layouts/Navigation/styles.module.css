@@ -5,13 +5,14 @@
   width: 100%;
   z-index: 9;
   height: 90px;
+  transition: all .3s linear;
 }
 
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 50px;
+  padding: 10px 40px;
   box-sizing: border-box;
 }
 
@@ -20,7 +21,7 @@
   height: 70px;
 }
 
-.logo svg * {
+.wrapper:not(.scrolled) .logo svg * {
   fill: #fff;
 }
 
@@ -29,6 +30,11 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+}
+
+.socials .socialLink {
+  border: 1px solid #000;
+  border-radius: 50%;
 }
 
 .iconSocial svg {
@@ -46,10 +52,6 @@
 }
 
 .menuItem {
-  /*  */
-}
-
-.menuLink {
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
@@ -59,7 +61,7 @@
   padding-top: 5px;
 }
 
-.menuLink:after {
+.menuItem:after {
   content: '';
   position: absolute;
   width: 0%;
@@ -71,6 +73,147 @@
   transition: all .3s linear;
 }
 
-.menuLink:hover:after {
+.menuItem:hover:after {
   width: 50%;
+}
+
+.logoMobile {
+  display: none;
+}
+
+.closeMenu {
+  display: none;
+}
+
+.mobile {
+  display: none;
+}
+
+.wrapper.scrolled {
+  background: #fff;
+}
+
+.wrapper.scrolled .menuItem {
+  color: #000;
+}
+
+.openMenu {}
+
+.bgMask {
+  display: none;
+}
+
+@media (max-width: 991px) {
+
+  .container {
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .menu {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 360px;
+    bottom: 0;
+    left: -100%;
+    background: #fff;
+    overflow: hidden;
+    transition: all .3s linear;
+  }
+
+  .menu.active {
+    left: 0;
+  }
+
+  .socials svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .mobile {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logoShort {
+    display: block;
+  }
+
+  .logoShort svg {
+    width: calc(70px * 1.5341);
+    height: 60px;
+  }
+
+  .logoMobile {
+    height: 90px;
+    width: calc(90px * 3.2905);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+  }
+
+  .logoMobile svg {
+    height: 100%;
+    width: 100%;
+  }
+
+  .menuList {
+    display: block;
+    position: relative;
+    height: calc(100vh - 90px - 50px);
+    padding: 20px 20px 0px;
+    box-sizing: border-box;
+    overflow-y: auto;
+  }
+
+  .menuItem {
+    padding: 15px 20px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #000;
+  }
+
+  .menuItem:hover {
+    background: #0095DA;
+    color: #fff;
+  }
+
+  .closeMenu {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 1;
+  }
+
+  .closeMenu svg {
+    width: 35px;
+    height: 35px;
+  }
+
+  .wrapper.scrolled .openMenu svg * {
+    fill: #000;
+  }
+
+  .bgMask {
+    display: block;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+  }
 }
