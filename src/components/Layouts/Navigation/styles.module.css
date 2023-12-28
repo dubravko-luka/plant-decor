@@ -112,7 +112,7 @@
 
   .menu {
     position: fixed;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     max-width: 360px;
     bottom: 0;
