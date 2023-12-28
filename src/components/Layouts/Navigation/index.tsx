@@ -11,7 +11,7 @@ type Props = {
 
 const Navigation: React.FC<Props> = () => {
 
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
