@@ -1,6 +1,5 @@
 import React, { memo } from 'react';
 import styles from './styles.module.css'
-import Link from 'next/link';
 import { AppRoutes } from '@/constants/routes';
 import { alt } from '@/constants';
 

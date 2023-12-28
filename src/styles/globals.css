@@ -6,7 +6,7 @@ html {
   width: 100vw;
   overscroll-behavior: none;
   flex: 1;
-  background: #000;
+  background: #fff;
   overflow-x: hidden;
 }
 

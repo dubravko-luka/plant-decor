@@ -1,13 +1,9 @@
 .wrapper {
-  padding-left: 256px;
   box-sizing: border-box;
   background: #fff;
 }
 
 .container {
-  padding: 10px;
-  padding-top: 65px;
-  padding-bottom: 65px;
   box-sizing: border-box;
   background: #fff;
   position: relative;

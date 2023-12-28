@@ -1,0 +1,76 @@
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+  height: 90px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  box-sizing: border-box;
+}
+
+.logo svg {
+  width: calc(70px * 3.2905);
+  height: 70px;
+}
+
+.logo svg * {
+  fill: #fff;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.iconSocial svg {
+  width: 30px;
+  height: 30px;
+}
+
+.menu {}
+
+.menuList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
+}
+
+.menuItem {
+  /*  */
+}
+
+.menuLink {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  padding-top: 5px;
+}
+
+.menuLink:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all .3s linear;
+}
+
+.menuLink:hover:after {
+  width: 50%;
+}

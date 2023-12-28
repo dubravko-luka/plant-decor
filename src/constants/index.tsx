@@ -1,9 +1,9 @@
 export const KEY_LOCALSTORAGE_VERSION_APP = 'Ver.'
 export const VERSION_APP = '1.1.5'
 
-export const alt = 'Boarding House'
+export const alt = 'Vuon Trong Nha'
 
-export const NAME_PROJECT = "Boarding House";
+export const NAME_PROJECT = "Vuon Trong Nha";
 
 export const IMAGE_BACKGROUND_WEB = "";
 
