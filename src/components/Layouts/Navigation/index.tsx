@@ -4,6 +4,7 @@ import { logo, logoShort } from '@/assets/images/logo';
 import Svg from '@/components/Svg';
 import Link from 'next/link';
 import { menu } from './config';
+import { Helmet } from 'react-helmet';
 
 type Props = {
   //
@@ -31,6 +32,21 @@ const Navigation: React.FC<Props> = () => {
 
   return (
     <>
+      {
+        show && (
+          <Helmet>
+            <style>
+              {`
+                @media (max-width: 991px) {
+                  html, body {
+                    overflow: hidden!important;
+                  }
+                }
+              `}
+            </style>
+          </Helmet>
+        )
+      }
       <header className={`${styles.wrapper} ${scrolled ? styles.scrolled : ''}`}>
         <div className={`${styles.container}`}>
           <div className={`${styles.logo}`} dangerouslySetInnerHTML={{ __html: logo }}></div>
