@@ -92,10 +92,6 @@
   .title {
     font-size: 36px;
   }
-
-  .shortTitle {
-    font-size: 18px;
-  }
 }
 
 @media (max-width: 410px) {

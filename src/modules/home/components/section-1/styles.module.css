@@ -106,7 +106,7 @@
   height: 0;
   position: absolute;
   background: linear-gradient(0deg, rgba(5, 133, 87, 0.6), rgba(5, 133, 87, 0.6));
-  transition: .2s all ease;
+  transition: .3s all ease;
   border-radius: 20px;
 }
 
@@ -131,7 +131,7 @@
   white-space: nowrap;
   z-index: 2;
   opacity: 0;
-  transition: .2s all ease;
+  transition: .3s all ease;
 }
 
 .wrapProduct:hover:after {
@@ -168,5 +168,9 @@
 
   .title {
     font-size: 32px;
+  }
+
+  .product {
+    gap: 10px;
   }
 }

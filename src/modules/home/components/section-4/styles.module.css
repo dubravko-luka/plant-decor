@@ -1,0 +1,177 @@
+.wrapper {
+  /*  */
+}
+
+.container {
+  max-width: 1265px;
+  margin: auto;
+  width: 100%;
+  padding: 75px 20px;
+  box-sizing: border-box;
+  gap: 24px;
+  z-index: 2;
+  position: relative;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 42px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--color-main);
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 2;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-main-2);
+  text-align: center;
+}
+
+.wrapCard {
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.wrapImgCard {
+  width: 100%;
+  height: 262px;
+  position: relative;
+}
+
+.wrapImgCard:before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  background: linear-gradient(0deg, rgba(5, 133, 87, 0.6), rgba(5, 133, 87, 0.6));
+  transition: .3s all ease;
+}
+
+.wrapCard:hover .wrapImgCard:before {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.wrapImgCard:after {
+  content: "Chi tiết";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5px 20px;
+  box-sizing: border-box;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  font-size: 12px;
+  white-space: nowrap;
+  z-index: 2;
+  opacity: 0;
+  transition: .3s all ease;
+}
+
+.wrapCard:hover .wrapImgCard:after {
+  opacity: 1;
+  top: 50%;
+}
+
+.imgCard {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.projectDate {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #515151;
+  margin-bottom: 7px;
+}
+
+.projectName {
+  margin-bottom: 14px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #191919;
+  text-decoration: none;
+}
+
+.projectDescription {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #515151;
+  margin-bottom: 19px;
+  font-weight: 300;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
+}
+
+.projectReadMore {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: all .3s linear;
+}
+
+.wrapCard:hover .projectReadMore {
+  gap: 15px;
+}
+
+.btnReadMore {
+  border: 1px solid #058557;
+  border-radius: 40px;
+  padding: 13px 20px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: #058557;
+  text-decoration: none;
+  transition: 0.5s all ease;
+  position: relative;
+  display: inline-block;
+}
+
+.btnReadMore:hover {
+  background-color: #058557;
+  color: #fff;
+}
+
+@media (max-width: 639px) {
+  .title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 479px) {
+  .subtitle {
+    line-height: 1.2;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 410px) {
+
+  .container {
+    column-gap: 10px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+}
