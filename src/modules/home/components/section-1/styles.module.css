@@ -1,8 +1,18 @@
 .wrapper {
+  position: relative;
+  background: #f7f7f5;
+  padding-bottom: 0px;
+}
+
+.container {
+  max-width: 1265px;
+  margin: auto;
+  width: 100%;
   padding: 75px 20px;
   box-sizing: border-box;
-  background: #f7f7f5;
   gap: 24px;
+  z-index: 2;
+  position: relative;
 }
 
 .title {
@@ -152,7 +162,7 @@
 
 @media (max-width: 410px) {
 
-  .wrapper {
+  .container {
     column-gap: 10px;
   }
 
