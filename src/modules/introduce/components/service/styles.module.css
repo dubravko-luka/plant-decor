@@ -1,0 +1,111 @@
+.wrapper {
+  background: #f7f7f5;
+  position: relative;
+}
+
+.bgSectionWave {
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.serviceItem {
+  width: calc(100% / 3 - 20px);
+  padding: 40px;
+  background: #fff;
+  border: 2px solid #75C043;
+  border-radius: 10px;
+}
+
+.wrapNumber {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+@media (max-width: 1023px) {
+  .wrapperService {
+    flex-wrap: wrap;
+  }
+
+  .serviceItem {
+    width: calc(100% / 2 - 10px);
+  }
+}
+
+@media (max-width: 767px) and (min-width: 640px) {
+  .head {
+    display: flex;
+    align-items: center;
+  }
+
+  .name {
+    text-align: center;
+  }
+
+  .serviceItem {
+    width: calc(100%);
+  }
+}
+
+@media (max-width: 639px) {
+  .wrapperService {
+    flex-wrap: wrap;
+  }
+
+  .serviceItem {
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+
+  .nameSection {
+    font-size: 20px;
+  }
+
+  .head {
+    display: block;
+  }
+
+  .name {
+    text-align: center;
+  }
+}
+
+.wrapperServiceIdea {
+  flex-wrap: wrap;
+}
+
+.serviceItemIdea {
+  width: calc(100% / 2 - 10px);
+  padding: 40px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+@media (max-width: 991px) {
+  .serviceItemIdea {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .name {
+    text-align: left;
+  }
+}

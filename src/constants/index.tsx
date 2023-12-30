@@ -3,7 +3,7 @@ export const VERSION_APP = '1.1.5'
 
 export const alt = 'Vuon Trong Nha'
 
-export const NAME_PROJECT = "Vuon Trong Nha";
+export const NAME_PROJECT = "Vườn Trong Nhà ";
 
 export const DESCRIPTION_PROJECT_DEFAULT = "Đem lại trải nghiệm không gian chất lượng cao. Vườn Trong Nhà là công ty chuyên thiết kế vườn trong nhà với hơn 5 năm trong lĩnh vực thiết kế.";
 

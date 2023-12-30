@@ -173,7 +173,7 @@
   }
 
   .logoShort svg {
-    width: calc(70px * 1.5341);
+    width: calc(60px * 1.5341);
     height: 60px;
   }
 
@@ -242,5 +242,21 @@
     top: 0;
     left: 0;
     opacity: 0.5;
+  }
+}
+
+@media (max-width: 300px) {
+  .logoShort {
+    width: calc(50px * 1.5341);
+    height: 50px;
+  }
+
+  .socials {
+    gap: 2px;
+  }
+
+  .logoMobile {
+    height: 70px;
+    width: calc(70px * 3.2905);
   }
 }
