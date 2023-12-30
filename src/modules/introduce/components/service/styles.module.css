@@ -3,14 +3,6 @@
   position: relative;
 }
 
-.bgSectionWave {
-  position: absolute;
-  bottom: 0%;
-  left: 0;
-  width: 100%;
-  object-fit: cover;
-}
-
 .serviceItem {
   width: calc(100% / 3 - 20px);
   padding: 40px;

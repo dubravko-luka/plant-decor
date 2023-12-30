@@ -1,0 +1,60 @@
+.wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.achievement {
+  border: 2px solid #000;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.achievement::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 8px);
+  height: calc(100% + 14px);
+  border: 2px solid #000;
+  z-index: -1;
+}
+
+.titleAchievement {
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.descriptionAchievement {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+}
+
+.achievement:hover {
+  border-color: var(--color-main);
+}
+
+.achievement:hover:before {
+  background: var(--color-main);
+  border-color: var(--color-main);
+}
+
+@media (max-width: 479px) {
+
+  .titleAchievement {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 320px) {
+
+  .nameSection {
+    font-size: 20px;
+  }
+}

@@ -25,12 +25,12 @@ const Vision: React.FC<Props> = () => {
   return (
     <>
       <div className={`${styles.wrapper} sm:px-10 px-5 py-10 `}>
-        <div className="mt-5 px-5 sm:px-10 pt-20">
-          <div className="grid grid-cols-12 gap-5 items-center">
+        <img className={styles.bgSectionWave} src="/images/png/wave-3.png" alt={alt} />
+        <div className="mt-5 pt-10 relative z-[2]">
+          <div className="grid grid-cols-12 lg:gap-5 gap-y-5 items-center">
             <div className="llg:col-span-6 col-span-12">
               <h1 className={`text-3xl font-bold text-black ${styles.nameSection}`}>Tầm nhìn & Giá trị cốt lõi</h1>
               <p className='text-black text-sm font-light mt-3'>{vision[0]?.title ?? ''}</p>
-
               <div className="mt-5">
                 {
                   vision[0]?.vision?.map((item: any, index: any) => (
