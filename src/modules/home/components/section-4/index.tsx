@@ -15,7 +15,7 @@ const Section4: React.FC<Props> = () => {
         <div className={`${styles.container}`}>
           <h2 className={`${styles.title}`}>Vườn Trong Nhà</h2>
           <h3 className={`${styles.subtitle}`}>Nơi bạn có thể tìm thấy không gian xanh cho cuộc sống của bạn</h3>
-          <div className="grid grid-cols-12 sm:gap-5 gap-3">
+          <div className="grid grid-cols-12 sm:gap-5 ssm:gap-3 gap-y-3">
             <Link href={'/'} className={`${styles.wrapCard} xl:col-span-3 ssm:col-span-6 col-span-12`}>
               <div className={`${styles.wrapImgCard}`}>
                 <img className={styles.imgCard} src="/images/jpg/image-1.jpg" alt={alt} />

@@ -5,6 +5,7 @@ import LoadingData from '@/components/Loading/Data';
 import { useSelector } from 'react-redux';
 import { RootState } from '@/store/types';
 import Navigation from '../Navigation';
+import Footer from '../Footer';
 
 interface LayoutProps {
   children: ReactElement
@@ -27,6 +28,7 @@ const LayoutComponent: React.FC<LayoutProps> = ({ children }) => {
           {children}
         </div>
       </div>
+      <Footer />
     </>
   )
 }

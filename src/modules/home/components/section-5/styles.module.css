@@ -1,0 +1,55 @@
+.wrapper {
+  position: relative;
+  background: #fff;
+}
+
+.container {
+  max-width: 1265px;
+  margin: auto;
+  width: 100%;
+  padding: 75px 20px;
+  box-sizing: border-box;
+  gap: 24px;
+  z-index: 2;
+  position: relative;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 42px;
+  line-height: 1.2;
+  text-align: center;
+  color: #000;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.textContact {
+  font-weight: 600;
+}
+
+.item:hover .textContact {
+  color: var(--color-main-2);
+}
+
+@media (max-width: 639px) {
+  .title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 410px) {
+
+  .container {
+    column-gap: 10px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+}

@@ -1,0 +1,63 @@
+.bg {
+  background: #000;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1080px;
+  margin: auto;
+}
+
+.wrapCopyRight {
+  display: flex;
+  justify-content: center;
+}
+
+.copyRight {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #fff;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.linkFooter svg {
+  width: 34px;
+  height: 34px;
+  transition: all .3s linear;
+}
+
+.linkFooter:hover {
+  color: var(--color-main);
+}
+
+.linkFooter:hover svg * {
+  fill: var(--iconColor) !important;
+}
+
+.logo svg {
+  width: calc(100px * 3.2905);
+  height: 100px;
+}
+
+@media (max-width: 639px) {
+  .logo svg {
+    width: calc(70px * 3.2905);
+    height: 70px;
+  }
+}
+
+@media (max-width: 409px) {
+  .logo svg {
+    width: calc(50px * 3.2905);
+    height: 50px;
+  }
+}
