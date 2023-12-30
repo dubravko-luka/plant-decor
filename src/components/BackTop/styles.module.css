@@ -1,0 +1,31 @@
+.backToTop {
+	display: none;
+	position: fixed;
+	bottom: 50px;
+	right: 20px;
+	z-index: 999;
+	font-size: 1.8rem;
+	border: none;
+	cursor: pointer;
+	transition: opacity 0.3s ease-in-out;
+	width: 40px;
+	height: 40px;
+}
+
+.backToTop svg {
+	width: 40px;
+	height: 40px;
+}
+
+.backToTop.show {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 1;
+}
+
+@media (max-width: 991px) {
+	.backToTop {
+		bottom: 110px;
+	}
+}

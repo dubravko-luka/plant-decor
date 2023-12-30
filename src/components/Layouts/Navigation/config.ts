@@ -8,7 +8,7 @@ export const menu: IMenu[] = [
   {
     name: "Giới thiệu",
     href: "vuon-trong-nha",
-    newTab: true,
+    newTab: false,
   },
   {
     name: "S-Decor",
@@ -18,16 +18,16 @@ export const menu: IMenu[] = [
   {
     name: "Sản Phẩm",
     href: "san-pham",
-    newTab: true,
+    newTab: false,
   },
   {
     name: "Tư Vấn",
     href: "tu-van",
-    newTab: true,
+    newTab: false,
   },
   {
     name: "Liên hệ",
     href: "lien-he",
-    newTab: true,
+    newTab: false,
   }
 ]

@@ -33,7 +33,7 @@
   font-weight: 600;
 }
 
-.item:hover .textContact {
+.itemLink:hover .textContact {
   color: var(--color-main-2);
 }
 

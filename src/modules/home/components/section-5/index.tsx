@@ -17,28 +17,32 @@ const Section5: React.FC<Props> = () => {
             <div className="grid grid-cols-12 sm:gap-5 gap-y-5">
               <div className={`${styles.item} sm:col-span-6 col-span-12`}>
                 <Svg name="phone" />
-                <Link href={`tel:0907777709`} target='_blank'>
+                <Link className={`${styles.itemLink}`} href={`tel:0907777709`} target='_blank'>
                   <p className={`${styles.textContact}`}>0907.777.709</p>
                 </Link>
               </div>
               <div className={`${styles.item} sm:col-span-6 col-span-12`}>
                 <Svg name="zalo" />
-                <Link href={`https://zalo.me/0907777709`} target='_blank'>
+                <Link className={`${styles.itemLink}`} href={`https://zalo.me/0907777709`} target='_blank'>
                   <p className={`${styles.textContact}`}>Xưởng Vườn Trong Nhà</p>
                 </Link>
               </div>
               <div className={`${styles.item} sm:col-span-6 col-span-12`}>
                 <Svg name="location" />
-                <p className={`${styles.textContact}`}>CN1: 11/25 Nguyễn Thái Sơn, P3, Gò Vấp</p>
+                <p className={`${styles.itemLink}`}>
+                  <p className={`${styles.textContact}`}>CN1: 11/25 Nguyễn Thái Sơn, P3, Gò Vấp</p>
+                </p>
               </div>
               <div className={`${styles.item} sm:col-span-6 col-span-12`}>
                 <Svg name="location" />
-                <p className={`${styles.textContact}`}>CN2: F1 Mậu Thân, An Phú, Ninh Kiều, Cần Thơ</p>
+                <p className={`${styles.itemLink}`}>
+                  <p className={`${styles.textContact}`}>CN2: F1 Mậu Thân, An Phú, Ninh Kiều, Cần Thơ</p>
+                </p>
               </div>
               <div className={`${styles.item} sm:col-span-6 col-span-12`}>
                 <Svg name="email" />
-                <Link href={`mailto:s-decor@gmail.com`} target='_blank'>
-                  <p className={`${styles.textContact}`}>s-decor@gmail.com</p>
+                <Link className={`${styles.itemLink}`} href={`mailto:vuontrongnha@gmail.com`} target='_blank'>
+                  <p className={`${styles.textContact}`}>vuontrongnha@gmail.com</p>
                 </Link>
               </div>
             </div>

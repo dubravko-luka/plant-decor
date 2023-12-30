@@ -129,3 +129,7 @@
     overflow-x: hidden;
   }
 }
+
+nextjs-portal {
+  display: none;
+}

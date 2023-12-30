@@ -18,7 +18,7 @@ const Section4: React.FC<Props> = () => {
           <div className="grid grid-cols-12 sm:gap-5 ssm:gap-3 gap-y-3">
             <Link href={'/'} className={`${styles.wrapCard} xl:col-span-3 ssm:col-span-6 col-span-12`}>
               <div className={`${styles.wrapImgCard}`}>
-                <img className={styles.imgCard} src="/images/jpg/image-1.jpg" alt={alt} />
+                <img className={styles.imgCard} src="/images/jpg/home-image-1.jpg" alt={alt} />
               </div>
               <div className="p-5">
                 <p className={`${styles.projectDate}`}>2023/11/13</p>
@@ -35,7 +35,7 @@ const Section4: React.FC<Props> = () => {
             </Link>
             <Link href={"/"} className={`${styles.wrapCard} xl:col-span-3 ssm:col-span-6 col-span-12`}>
               <div className={`${styles.wrapImgCard}`}>
-                <img className={styles.imgCard} src="/images/jpg/image-2.jpg" alt={alt} />
+                <img className={styles.imgCard} src="/images/jpg/home-image-2.jpg" alt={alt} />
               </div>
               <div className="p-5">
                 <p className={`${styles.projectDate}`}>2023/11/13</p>
@@ -52,7 +52,7 @@ const Section4: React.FC<Props> = () => {
             </Link>
             <Link href={'/'} className={`${styles.wrapCard} xl:col-span-3 ssm:col-span-6 col-span-12`}>
               <div className={`${styles.wrapImgCard}`}>
-                <img className={styles.imgCard} src="/images/jpg/image-3.jpg" alt={alt} />
+                <img className={styles.imgCard} src="/images/jpg/home-image-3.jpg" alt={alt} />
               </div>
               <div className="p-5">
                 <p className={`${styles.projectDate}`}>2023/11/13</p>
@@ -69,7 +69,7 @@ const Section4: React.FC<Props> = () => {
             </Link>
             <Link href={'/'} className={`${styles.wrapCard} xl:col-span-3 ssm:col-span-6 col-span-12`}>
               <div className={`${styles.wrapImgCard}`}>
-                <img className={styles.imgCard} src="/images/jpg/image-1.jpg" alt={alt} />
+                <img className={styles.imgCard} src="/images/jpg/home-image-1.jpg" alt={alt} />
               </div>
               <div className="p-5">
                 <p className={`${styles.projectDate}`}>2023/11/13</p>

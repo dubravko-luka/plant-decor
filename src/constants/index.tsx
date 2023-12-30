@@ -5,6 +5,6 @@ export const alt = 'Vuon Trong Nha'
 
 export const NAME_PROJECT = "Vuon Trong Nha";
 
-export const IMAGE_BACKGROUND_WEB = "";
+export const IMAGE_BACKGROUND_WEB = "/images/logos/banner-share.png";
 
 export const DEFAULT_AVATAR = '/images/svg/default-avatar.svg'

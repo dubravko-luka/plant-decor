@@ -1,0 +1,155 @@
+.wrapper {
+  background: linear-gradient(180deg, #f7f7f5 30%, #fff);
+  padding-bottom: 70px;
+}
+
+.content {
+  width: 90%;
+  max-width: 950px;
+  padding: 40px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin: auto;
+  z-index: 2;
+  position: relative;
+}
+
+.wrapForm {
+  background: #f7f7f5;
+  border: 1px solid #000;
+}
+
+.form {
+  margin-top: 40px;
+}
+
+.inputs {
+  /*  */
+}
+
+.input {
+  width: 100%;
+  border: 1px solid #d0d0d0;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: var(--color-main);
+  font-weight: 400;
+}
+
+.input:last-child {
+  margin-bottom: 0px;
+}
+
+.textarea {
+  height: 100%;
+  border: 1px solid #d0d0d0;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  resize: none;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.input:focus,
+.textarea:focus {
+  box-shadow: none;
+  outline: transparent;
+}
+
+.sendInfo:hover {
+  background: #000;
+  color: var(--color-main);
+}
+
+.sendInfo {
+  background: var(--color-main);
+  color: #000;
+  padding: 15px;
+  font-weight: bold;
+}
+
+.contact {
+  transform: translateY(-25%);
+}
+
+.info {
+  background: transparent;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.item {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.item,
+.item * {
+  line-height: 1.5;
+}
+
+.item:before {
+  content: '';
+  position: absolute;
+  top: 7.5px;
+  left: 2.5px;
+  width: 10px;
+  height: 10px;
+  background: var(--color-main);
+  border-radius: 10px;
+}
+
+.item:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background: var(--color-main);
+  opacity: .5;
+  border-radius: 15px;
+}
+
+.item:hover span,
+.item:hover b {
+  color: var(--color-main);
+}
+
+@media (max-width: 639px) {
+
+  .textarea {
+    height: 150px;
+  }
+
+  .content {
+    width: 100%;
+    padding: 20px;
+    transform: unset;
+    padding-bottom: 0px;
+  }
+
+  .contact {
+    width: 100%;
+    display: block;
+    max-width: 950px;
+    transform: unset;
+  }
+}
+
+@media (max-width: 369px) {
+
+  .info {
+    border-radius: 0px;
+  }
+
+  .content {
+    padding: 10px;
+    padding-bottom: 0px;
+  }
+
+}

@@ -1,13 +1,13 @@
 import { IMAGE_BACKGROUND_WEB, NAME_PROJECT } from "@/constants";
-import Home from "@/modules/home";
+import HomeContainer from "@/modules/home";
 import { NextSeo } from "next-seo";
 import React, { memo } from "react";
 
-const IndexPage: React.FC = () => {
+const Home: React.FC = () => {
 
   return (
     <>
-      <Home />
+      <HomeContainer />
       <NextSeo
         title={`${NAME_PROJECT} | Trang chủ`}
         description={`Trang chủ`}
@@ -23,4 +23,4 @@ const IndexPage: React.FC = () => {
   )
 }
 
-export default memo(IndexPage)
+export default memo(Home)

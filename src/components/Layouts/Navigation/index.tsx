@@ -53,7 +53,7 @@ const Navigation: React.FC<Props> = () => {
       }
       <header className={`${styles.wrapper} ${scrolled ? styles.scrolled : ''}`}>
         <div className={`${styles.container}`}>
-          <div className={`${styles.logo}`} dangerouslySetInnerHTML={{ __html: logo }}></div>
+          <Link href={'/'} className={`${styles.logo}`} dangerouslySetInnerHTML={{ __html: logo }}></Link>
           <div className={styles.mobile}>
             <div className={`${styles.openMenu}`} onClick={() => setShow(true)}>
               <Svg
@@ -61,15 +61,14 @@ const Navigation: React.FC<Props> = () => {
                 path='icons'
               />
             </div>
-            <div className={`${styles.logoShort}`} dangerouslySetInnerHTML={{ __html: logoShort }}></div>
+            <Link href={'/'} className={`${styles.logoShort}`} dangerouslySetInnerHTML={{ __html: logoShort }}></Link>
           </div>
           {
             show && <div className={`${styles.bgMask}`} onClick={() => setShow(false)}></div>
           }
           <div className={`${styles.menu} ${show ? styles.active : ''}`}>
             <div className={`relative`}>
-              <div className={`${styles.logoMobile}`} dangerouslySetInnerHTML={{ __html: logo }}>
-              </div>
+              <Link href={'/'} className={`${styles.logoMobile}`} dangerouslySetInnerHTML={{ __html: logo }} onClick={() => setShow(false)}></Link>
               <div className={`${styles.closeMenu}`} onClick={() => setShow(false)}>
                 <Svg
                   name='close-menu'
@@ -81,8 +80,8 @@ const Navigation: React.FC<Props> = () => {
               {
                 menu.map((item, index) => (
                   item.newTab
-                    ? <Link className={`${styles.menuItem}`} target='_blank' href={item.href} key={index}>{item.name}</Link>
-                    : <Link className={`${styles.menuItem}`} href={item.href} key={index}>{item.name}</Link>
+                    ? <Link onClick={() => setShow(false)} className={`${styles.menuItem}`} target='_blank' href={item.href} key={index}>{item.name}</Link>
+                    : <Link onClick={() => setShow(false)} className={`${styles.menuItem}`} href={item.href} key={index}>{item.name}</Link>
                 ))
               }
             </ul>

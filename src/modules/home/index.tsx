@@ -10,7 +10,7 @@ type Props = {
   //
 };
 
-const Home: React.FC<Props> = () => {
+const HomeContainer: React.FC<Props> = () => {
   return (
     <>
       <Banner />
@@ -23,4 +23,4 @@ const Home: React.FC<Props> = () => {
   );
 };
 
-export default memo(Home);
+export default memo(HomeContainer);

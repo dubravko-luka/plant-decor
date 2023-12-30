@@ -37,16 +37,16 @@ const WeAre: React.FC<Props> = () => {
           <div className="md:col-span-6 col-span-12 md:pt-0 pt-10">
             <div className={`${styles.product} grid grid-cols-12`}>
               <div className={`${styles.wrapProduct} col-span-6`}>
-                <img className={`${styles.imgProduct}`} src="/images/jpg/image-1.jpg" alt={alt} />
+                <img className={`${styles.imgProduct}`} src="/images/jpg/home-image-1.jpg" alt={alt} />
               </div>
               <div className={`${styles.wrapProduct} col-span-6`}>
-                <img className={`${styles.imgProduct}`} src="/images/jpg/image-2.jpg" alt={alt} />
+                <img className={`${styles.imgProduct}`} src="/images/jpg/home-image-2.jpg" alt={alt} />
               </div>
               <div className={`${styles.wrapProduct} col-span-6`}>
-                <img className={`${styles.imgProduct}`} src="/images/jpg/image-3.jpg" alt={alt} />
+                <img className={`${styles.imgProduct}`} src="/images/jpg/home-image-3.jpg" alt={alt} />
               </div>
               <div className={`${styles.wrapProduct} col-span-6`}>
-                <img className={`${styles.imgProduct}`} src="/images/jpg/image-4.jpg" alt={alt} />
+                <img className={`${styles.imgProduct}`} src="/images/jpg/home-image-4.jpg" alt={alt} />
               </div>
             </div>
           </div>
