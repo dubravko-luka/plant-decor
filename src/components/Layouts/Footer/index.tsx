@@ -74,7 +74,7 @@ const Footer: React.FC<Props> = () => {
             <div className={`${styles.logo}`} dangerouslySetInnerHTML={{ __html: logo }}></div>
           </Link>
 
-          <p className='sssm:text-base text-xs text-white text-center'>KIẾN TRÚC - XÂY DỰNG - NỘI THẤT - SÂN VƯỜN</p>
+          <p className='s410:text-base text-xs text-black text-center'>KIẾN TRÚC - XÂY DỰNG - NỘI THẤT - SÂN VƯỜN</p>
 
           <div className={`${styles.icons}`}>
             {

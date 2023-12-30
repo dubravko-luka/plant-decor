@@ -89,10 +89,16 @@ const Navigation: React.FC<Props> = () => {
           </div>
           <div className={`${styles.socials}`}>
             <Link className={styles.socialLink} href="/" target='_blank'>
-              <Svg class={styles.iconSocial} name={"facebook-circle"} />
+              <Svg class={styles.iconSocial} name={"phone-circle"} />
             </Link>
             <Link className={styles.socialLink} href="/" target='_blank'>
               <Svg class={styles.iconSocial} name={"zalo-circle"} />
+            </Link>
+            <Link className={styles.socialLink} href="/" target='_blank'>
+              <Svg class={styles.iconSocial} name={"facebook-circle"} />
+            </Link>
+            <Link className={styles.socialLink} href="https://sdecor.space" target='_blank'>
+              <Svg class={styles.iconSocial} name={"sdecor-circle"} />
             </Link>
           </div>
         </div>
