@@ -38,7 +38,7 @@ const Service: React.FC<Props> = () => {
     <>
       <div className={`${styles.wrapper} sm:px-10 px-5 py-10 `}>
         <img className={styles.bgSectionWave} src="/images/png/wave-2.png" alt={alt} />
-        <div className='relative z-9'>
+        <div className='relative'>
           <h1 className={`text-3xl font-bold text-black text-center ${styles.nameSection}`}>Dịch vụ chúng tôi cung cấp</h1>
           <div className={`${styles.wrapperService} flex-wrap flex gap-5 mt-10 justify-center`}>
             {
