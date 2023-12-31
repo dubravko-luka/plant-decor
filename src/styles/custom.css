@@ -1,5 +1,6 @@
 :root {
   --color-main: #75C043;
+  --color-main-50: rgb(0, 255, 162, 0.5);
   --color-main-20: rgb(0, 255, 162, 0.2);
   --color-main-2: #0095DA;
 }
@@ -29,7 +30,7 @@
 
 .anticon.anticon-right svg *,
 .anticon.anticon-left svg * {
-  fill: #fff;
+  fill: #000;
 }
 
 .ant-pagination-item a {
@@ -50,7 +51,7 @@
 
 .ant-pagination-item a,
 .ant-pagination-item-ellipsis {
-  color: #fff !important;
+  color: #000 !important;
 }
 
 .ant-pagination-item.ant-pagination-item-active {
