@@ -15,8 +15,8 @@ const IntroduceContainer: React.FC<Props> = () => {
       <Banner />
       <Service />
       <Vision />
-      <What />
       <OutstandingAchievements />
+      <What />
     </>
   );
 };

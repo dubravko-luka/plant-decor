@@ -20,15 +20,15 @@ module.exports = {
       destination: '/advise/view/:id',
     },
     {
-      source: '/du-an',
+      source: '/san-pham',
       destination: '/project',
     },
     {
-      source: '/du-an/:slug',
+      source: '/san-pham/:slug',
       destination: '/project/:slug',
     },
     {
-      source: '/du-an/view/:id',
+      source: '/san-pham/view/:id',
       destination: '/project/view/:id',
     },
     {
@@ -52,7 +52,7 @@ module.exports = {
     //   destination: '/s-decor/warranty-policy',
     // },
     // {
-    //   source: '/video-du-an-thuc-te',
+    //   source: '/video-san-pham-thuc-te',
     //   destination: '/video-project',
     // },
     // {

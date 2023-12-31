@@ -8,8 +8,8 @@ type Props = {
 const OutstandingAchievements: React.FC<Props> = () => {
   return (
     <>
-      <div className={`${styles.wrapper} sm:px-10 px-5 py-10 `}>
-        <div className="mt-5 pt-10 relative z-[2]">
+      <div className={`${styles.wrapper} sm:px-10 px-5 pb-10 pt-0`}>
+        <div className="mt-5 pt-5 relative z-[2]">
           <div className={`grid grid-cols-12 lg:gap-5 gap-y-10`}>
             <div className="col-span-12">
               <div className="llg:col-span-6 col-span-12">
